@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardviewrequests">
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profilegrouppic"
+            android:layout_width="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher_round"></com.mikhaellopez.circularimageview.CircularImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/groupnameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Group Name"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/groupdescid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="last message"
+            android:textSize="15sp"></TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+    <Button
+
+        android:id="@+id/acceptbuttonid"
+        android:layout_width="116dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="21dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="ACCEPT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"></Button>
+
+    <Button
+        android:id="@+id/rejectbuttonid"
+        android:layout_width="126dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="42dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="REJECT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"></Button>
+
+    <View
+        android:id="@+id/divider"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

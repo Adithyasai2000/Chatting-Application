@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/verificartionfragment"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepone"
+        android:text="STEP1:"
+        android:paddingTop="23dp"
+        android:textSize="34dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:pointerIcon="arrow"
+        android:paddingTop="23dp"
+        android:paddingLeft="19dp"
+        android:paddingBottom="23dp"
+        android:text="YOU EMAIL IS SUCESSFULLY VERIFIED"
+        android:textSize="24dp"
+        android:layout_below="@+id/stepone"
+        android:id="@+id/gmailverification"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmailverification"
+        android:paddingTop="23dp"
+        android:paddingBottom="23dp"
+        android:id="@+id/steptwo"
+        android:text="STEP2:"
+        android:textSize="34dp"></TextView>
+
+<EditText
+    android:id="@+id/phoneid"
+    android:paddingLeft="19dp"
+    android:layout_below="@+id/steptwo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter phone no"></EditText>
+    <EditText
+        android:id="@+id/verificationcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:visibility="invisible"
+        android:paddingLeft="19dp"
+        android:layout_below="@+id/phoneid"></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verificationcode"
+        android:text="SEND OTP"
+        android:id="@+id/sendotppbutton"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendotppbutton"
+        android:text="VERIFY"
+        android:visibility="invisible"
+        android:id="@+id/verifybutton"></Button>
+
+    <TextView
+        android:id="@+id/phoneverification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="344dp"
+        android:layout_marginBottom="209dp"
+        android:paddingLeft="19dp"
+        android:paddingTop="23dp"
+        android:paddingBottom="23dp"
+        android:pointerIcon="arrow"
+        android:text="YOU phone no IS SUCESSFULLY VERIFIED"
+        android:textSize="24dp"
+        android:visibility="visible"></TextView>
+</RelativeLayout>

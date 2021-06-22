@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imagepostviewcardview">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:src="@drawable/ic_logout"
+        android:id="@+id/postimageid"
+        ></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/postsenderid"
+            android:src="@drawable/ic_logout"></com.mikhaellopez.circularimageview.CircularImageView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/backgroundscore"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/treee"
+            ></ImageView>
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundscore"
+            ></ToggleButton>
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post name"
+                android:id="@+id/postnameid"
+                android:textStyle="bold"
+                android:textSize="15sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="decription"
+                android:id="@+id/postdescriptionid"
+                android:textSize="10sp"></TextView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/postmoreoptionid"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_more_options"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

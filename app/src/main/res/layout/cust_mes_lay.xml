@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:id="@+id/message_profile"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/ic_profile"></com.mikhaellopez.circularimageview.CircularImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiver_message_text"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="receiver message"
+        android:background="@drawable/receivermessageslayout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/message_profile"></TextView>
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_alignParentEnd="true"
+       android:scaleType="centerCrop"
+       android:layout_margin="5dp"
+       android:id="@+id/message_sender_imageview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sender_message_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sendermessageslayout"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Sender Message"
+        ></TextView>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="50dp"
+        android:id="@+id/message_receiver_imageview"/>
+</RelativeLayout>

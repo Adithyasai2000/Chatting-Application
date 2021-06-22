@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_chat"
+            android:id="@+id/nav_homechat"
+            android:title="Chat"/>
+        <item
+            android:icon="@drawable/ic_group_black_24dp"
+            android:id="@+id/nav_groupchat"
+            android:title="Group Chat"></item>
+        <item
+            android:icon="@drawable/ic_status"
+            android:id="@+id/nav_status"
+            android:title="Status"></item>
+        <item
+            android:icon="@drawable/ic_profile"
+            android:id="@+id/nav_contacts"
+            android:title="Contacts"></item>
+        <item
+            android:icon="@drawable/ic_profile"
+            android:id="@+id/nav_requests"
+            android:title="Requests"></item>
+
+        <item
+            android:icon="@drawable/ic_play_circle"
+            android:id="@+id/nav_vediopost"
+            android:title="VedioPosts"></item>
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:icon="@drawable/ic_setting"
+                android:id="@+id/nav_settings"
+                android:title="Setting"></item>
+
+            <item
+                android:icon="@drawable/ic_verification"
+                android:id="@+id/nav_verification"
+                android:title="Two STEP Verification"></item>
+            <item
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/nav_logout"
+                android:title="Logout"></item>
+        </menu>
+    </item>
+</menu>

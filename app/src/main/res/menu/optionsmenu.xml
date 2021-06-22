@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="New Group"
+    android:id="@+id/find_new_group"
+    app:showAsAction="never"></item>
+    <item
+        android:title="Find Friends"
+        android:id="@+id/find_new_friends"
+        app:showAsAction="never"></item>
+    <item
+        android:title="Logout"
+        android:id="@+id/find_user_logout"
+        app:showAsAction="never"></item>
+    <item
+        android:title="Setting"
+        android:id="@+id/find_new_setting"
+        app:showAsAction="never"></item>
+    <item
+        android:title="Upload Post"
+        android:id="@+id/find_upload_post"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/find_upload_postvedio"
+        android:title="Upload Vedio"
+        app:showAsAction="never"></item>
+</menu>

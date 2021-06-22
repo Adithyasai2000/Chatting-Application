@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:src="@drawable/ic_logout"
+        android:id="@+id/postvedioid"
+        ></WebView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/vediopostsenderid"
+            android:src="@drawable/ic_logout"></com.mikhaellopez.circularimageview.CircularImageView>
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post name"
+                android:id="@+id/vediopostnameid"
+                android:textStyle="bold"
+                android:textSize="22sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="decription"
+                android:id="@+id/vediopostdescriptionid"
+                android:textSize="22sp"></TextView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/vediopostmoreoptionid"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_more_options"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

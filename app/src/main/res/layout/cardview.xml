@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview">
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profilegrouppic"
+            android:layout_width="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher_round"></com.mikhaellopez.circularimageview.CircularImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/groupnameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Group Name"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/groupdescid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="last message"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:id="@+id/groupdescids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="5sp"></TextView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:paddingTop="80dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

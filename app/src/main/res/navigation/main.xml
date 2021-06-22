@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeChatFragment">
+
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.justchat.ContactsFragment"
+        android:label="contactsfragment"
+        tools:layout="@layout/contactsfragment" />
+    <fragment
+        android:id="@+id/groupChatFragment"
+        android:name="com.example.justchat.GroupChatFragment"
+        android:label="groupchatfragment"
+        tools:layout="@layout/groupchatfragment" />
+    <fragment
+        android:id="@+id/homeChatFragment"
+        android:name="com.example.justchat.HomeChatFragment"
+        android:label="homechatfragment"
+        tools:layout="@layout/homechatfragment" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.justchat.StatusFragment"
+        android:label="statusfragment"
+        tools:layout="@layout/statusfragment" />
+</navigation>

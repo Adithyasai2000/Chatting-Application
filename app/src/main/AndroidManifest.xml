@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.justchat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UploadVedioPostActivity"></activity>
+        <activity android:name=".UploadPostActivity" />
+        <activity android:name=".VapourChatActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".UserProfileDetailsActivity" />
+        <activity
+            android:name=".FindFriendsActivity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PhoneSignAuthentication" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".profileactivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
